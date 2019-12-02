@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/hope"
+                        userId="root"
+                        password="root">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.yship.bean" targetProject=".\src\main\java">
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!--<sqlMapGenerator targetPackage="com.yship.mapper"  targetProject=".\mapper\src\main\java">-->
+            <!--<property name="enableSubPackages" value="true" />-->
+        <!--</sqlMapGenerator>-->
+
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.yship.mapper"  targetProject=".\src\main\java">
+        </javaClientGenerator>
+
+        <table tableName="hope_edu_student" domainObjectName="Student"/>
+        <table tableName="hope_edu_menu" domainObjectName="Menu"/>
+        <table tableName="hope_edu_classes" domainObjectName="Classes"/>
+        <table tableName="hope_edu_grade" domainObjectName="Grade"/>
+        <table tableName="hope_edu_role" domainObjectName="Role"/>
+        <table tableName="hope_edu_specialty" domainObjectName="Specialty"/>
+        <table tableName="hope_edu_user" domainObjectName="User"/>
+        <table tableName="hope_edu_rolemenu" domainObjectName="Rolemenu"/>
+    </context>
+</generatorConfiguration>
