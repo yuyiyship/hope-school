@@ -21,7 +21,7 @@
     <spring-jdbc>5.2.1.RELEASE</spring-jdbc>
     <mybatis.verson>3.5.3</mybatis.verson>
     <druid.versoin>1.1.20</druid.versoin>
-    <mysql-connector.vesion>5.1.45</mysql-connector.vesion>
+    <mysql-connector.vesion>8.0.16</mysql-connector.vesion>
     <mybatis-spring>2.0.3</mybatis-spring>
     <servlet.version>3.1.0</servlet.version>
     <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
